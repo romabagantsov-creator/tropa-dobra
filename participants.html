@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Участники - Тропа Добра</title>
+    <title>Поддержать проект - Тропа Добра</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
@@ -16,10 +16,10 @@
             <ul class="nav-links">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html">О проекте</a></li>
-                <li><a href="participants.html" class="active">Участники</a></li>
+                <li><a href="participants.html">Участники</a></li>
                 <li><a href="news.html">Новости</a></li>
                 <li><a href="contact.html">Контакты</a></li>
-                <li><a href="support.html" class="btn-donate">Поддержать</a></li>
+                <li><a href="support.html" class="active btn-donate">Поддержать</a></li>
             </ul>
             <div class="nav-toggle">
                 <span></span>
@@ -31,174 +31,165 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Участники проекта</h1>
-            <p>Присоединяйтесь к нашему сообществу</p>
+            <h1>Поддержать проект</h1>
+            <p>Помогите нам сделать мир лучше для детей из детских домов</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="participant-categories">
-                <div class="category-card">
-                    <div class="category-icon">👨‍🎓</div>
-                    <h3>Волонтеры</h3>
-                    <p>Молодежь 14-20 лет</p>
+            <div class="support-intro">
+                <h2>Каждый может помочь!</h2>
+                <p>Для реализации проекта "Тропа Добра" нам нужна ваша поддержка. Выберите удобный для вас способ помочь:</p>
+            </div>
+
+            <div class="support-options">
+                <div class="support-card">
+                    <div class="support-icon">💰</div>
+                    <h3>Финансовая поддержка</h3>
+                    <p>Помогите покрыть расходы на организацию лагеря</p>
                     <ul>
-                        <li>Обучение детей в игровой форме</li>
-                        <li>Проведение эко-квестов</li>
-                        <li>Организация мероприятий</li>
+                        <li>Палатки и оборудование</li>
+                        <li>Питание для детей</li>
+                        <li>Транспортные расходы</li>
+                        <li>Обучающие материалы</li>
                     </ul>
-                    <a href="#volunteers" class="btn btn-primary">Стать волонтером</a>
+                    <button class="btn btn-primary" onclick="showDonationForm()">Поддержать финансово</button>
                 </div>
 
-                <div class="category-card">
-                    <div class="category-icon">🚒</div>
-                    <h3>Специалисты</h3>
-                    <p>Профессионалы своего дела</p>
+                <div class="support-card">
+                    <div class="support-icon">🎁</div>
+                    <h3>Материальная помощь</h3>
+                    <p>Предоставьте необходимые товары и оборудование</p>
                     <ul>
-                        <li>Проведение мастер-классов</li>
-                        <li>Демонстрация оборудования</li>
-                        <li>Профориентационные беседы</li>
+                        <li>Палатки и спальники</li>
+                        <li>Спортивный инвентарь</li>
+                        <li>Канцелярские товары</li>
+                        <li>Оборудование для мастер-классов</li>
                     </ul>
-                    <a href="#specialists" class="btn btn-primary">Стать партнером</a>
+                    <a href="contact.html" class="btn btn-primary">Предложить помощь</a>
                 </div>
 
-                <div class="category-card">
-                    <div class="category-icon">👵</div>
-                    <h3>Ветераны</h3>
-                    <p>Опытные наставники</p>
+                <div class="support-card">
+                    <div class="support-icon">🤝</div>
+                    <h3>Партнерство</h3>
+                    <p>Станьте официальным партнером проекта</p>
                     <ul>
-                        <li>Истории из профессиональной жизни</li>
-                        <li>Наставничество</li>
-                        <li>Передача опыта</li>
+                        <li>Информационная поддержка</li>
+                        <li>Организационная помощь</li>
+                        <li>Предоставление специалистов</li>
+                        <li>Участие в мероприятиях</li>
                     </ul>
-                    <a href="#veterans" class="btn btn-primary">Поделиться опытом</a>
+                    <a href="contact.html" class="btn btn-primary">Стать партнером</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section section-dark" id="volunteers">
+    <section class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Для волонтеров</h2>
-            <div class="requirements-grid">
-                <div class="requirement-card">
-                    <h3>📋 Требования</h3>
-                    <ul>
-                        <li>Возраст от 14 до 20 лет</li>
-                        <li>Желание работать с детьми</li>
-                        <li>Интерес к экологии</li>
-                        <li>Ответственность и коммуникабельность</li>
-                    </ul>
-                </div>
-                <div class="requirement-card">
-                    <h3>🎯 Обязанности</h3>
-                    <ul>
-                        <li>Проведение эко-игр и квестов</li>
-                        <li>Обучение сортировке мусора</li>
-                        <li>Помощь в организации мероприятий</li>
-                        <li>Наставничество для детей</li>
-                    </ul>
-                </div>
-                <div class="requirement-card">
-                    <h3>🎁 Что получаете</h3>
-                    <ul>
-                        <li>Опыт работы с детьми</li>
-                        <li>Волонтерское свидетельство</li>
-                        <li>Новые знакомства</li>
-                        <li>Бесплатное участие в лагере</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="form-section">
-                <h3>Стать волонтером</h3>
-                <form class="participant-form">
-                    <input type="text" placeholder="ФИО" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Телефон" required>
-                    <input type="number" placeholder="Возраст" min="14" max="20" required>
-                    <textarea placeholder="Почему вы хотите стать волонтером?" rows="4"></textarea>
-                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="specialists">
-        <div class="container">
-            <h2 class="section-title">Для специалистов</h2>
-            <div class="specialists-info">
-                <div class="specialist-types">
-                    <h3>Мы ищем специалистов:</h3>
-                    <div class="profession-grid">
-                        <div class="profession">🔥 Пожарные</div>
-                        <div class="profession">🌲 Лесники</div>
-                        <div class="profession">⛰️ Геологи</div>
-                        <div class="profession">🔬 Экологи</div>
-                        <div class="profession">🏞️ Инспекторы по охране природы</div>
-                        <div class="profession">🌱 Биологи</div>
+            <h2 class="section-title">На что пойдут средства?</h2>
+            <div class="budget-breakdown">
+                <div class="budget-item">
+                    <div class="budget-bar" style="width: 40%"></div>
+                    <div class="budget-info">
+                        <span class="budget-category">Проживание и питание</span>
+                        <span class="budget-amount">40%</span>
                     </div>
                 </div>
-                <div class="specialist-benefits">
-                    <h3>Условия участия:</h3>
-                    <ul>
-                        <li>Проведение 1-2 мастер-классов в день</li>
-                        <li>Демонстрация профессионального оборудования</li>
-                        <li>Ответы на вопросы детей</li>
-                        <li>Участие в профориентационных беседах</li>
-                    </ul>
-                    <p><strong>Мы предоставляем:</strong> транспорт, питание, размещение, организационную поддержку</p>
+                <div class="budget-item">
+                    <div class="budget-bar" style="width: 25%"></div>
+                    <div class="budget-info">
+                        <span class="budget-category">Оборудование и инвентарь</span>
+                        <span class="budget-amount">25%</span>
+                    </div>
                 </div>
-            </div>
-            <div class="form-section">
-                <h3>Стать партнером-специалистом</h3>
-                <form class="participant-form">
-                    <input type="text" placeholder="ФИО" required>
-                    <input type="text" placeholder="Профессия" required>
-                    <input type="text" placeholder="Организация" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Телефон" required>
-                    <textarea placeholder="Опишите ваш возможный вклад в проект" rows="4"></textarea>
-                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
-                </form>
+                <div class="budget-item">
+                    <div class="budget-bar" style="width: 20%"></div>
+                    <div class="budget-info">
+                        <span class="budget-category">Транспорт</span>
+                        <span class="budget-amount">20%</span>
+                    </div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-bar" style="width: 15%"></div>
+                    <div class="budget-info">
+                        <span class="budget-category">Организационные расходы</span>
+                        <span class="budget-amount">15%</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section section-dark" id="veterans">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Для ветеранов</h2>
-            <div class="veterans-info">
-                <div class="veteran-role">
-                    <h3>Роль ветеранов в проекте:</h3>
-                    <ul>
-                        <li>Рассказы из профессионального опыта</li>
-                        <li>Исторические перспективы изменений в природе</li>
-                        <li>Наставничество для молодого поколения</li>
-                        <li>Участие в дискуссиях и круглых столах</li>
-                    </ul>
-                </div>
-                <div class="veteran-support">
-                    <h3>Мы обеспечиваем:</h3>
-                    <ul>
-                        <li>Комфортные условия пребывания</li>
-                        <li>Трансфер до места проведения</li>
-                        <li>Полное питание и медицинское сопровождение</li>
-                        <li>Помощь в подготовке материалов</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="form-section">
-                <h3>Поделиться опытом</h3>
-                <form class="participant-form">
-                    <input type="text" placeholder="ФИО" required>
-                    <input type="text" placeholder="Бывшая профессия" required>
-                    <input type="number" placeholder="Лет опыта" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Телефон" required>
-                    <textarea placeholder="Какими историями/опытом можете поделиться?" rows="4"></textarea>
-                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            <div class="donation-form" id="donationForm" style="display: none;">
+                <h2>Форма финансовой поддержки</h2>
+                <form class="donation-form-content">
+                    <div class="form-group">
+                        <label>Сумма пожертвования</label>
+                        <div class="amount-buttons">
+                            <button type="button" class="amount-btn" data-amount="500">500 ₽</button>
+                            <button type="button" class="amount-btn" data-amount="1000">1000 ₽</button>
+                            <button type="button" class="amount-btn" data-amount="2500">2500 ₽</button>
+                            <button type="button" class="amount-btn" data-amount="5000">5000 ₽</button>
+                            <input type="number" placeholder="Другая сумма" class="custom-amount">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Периодичность</label>
+                        <div class="frequency-buttons">
+                            <button type="button" class="frequency-btn active" data-frequency="once">Однократно</button>
+                            <button type="button" class="frequency-btn" data-frequency="monthly">Ежемесячно</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-name">ФИО *</label>
+                        <input type="text" id="donor-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-email">Email *</label>
+                        <input type="email" id="donor-email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-phone">Телефон</label>
+                        <input type="tel" id="donor-phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required>
+                            Я соглашаюсь с обработкой персональных данных
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Поддержать проект</button>
                 </form>
+            </div>
+
+            <div class="support-contact">
+                <h3>Другие способы поддержки</h3>
+                <p>Если у вас есть вопросы или вы хотите предложить другой формат поддержки, свяжитесь с нами:</p>
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <strong>Банковский перевод:</strong>
+                        <p>Реквизиты будут предоставлены по запросу</p>
+                    </div>
+                    <div class="contact-option">
+                        <strong>Криптовалюта:</strong>
+                        <p>Возможна поддержка через криптовалюты</p>
+                    </div>
+                    <div class="contact-option">
+                        <strong>Волонтерство:</strong>
+                        <p>Станьте волонтером проекта</p>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-outline">Связаться для обсуждения</a>
             </div>
         </div>
     </section>
@@ -236,11 +227,42 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Тропа Добра. Все права защищены.</p>
+                <p>&copy; 2024 Тропа Добра. Все права защищены.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        function showDonationForm() {
+            document.getElementById('donationForm').style.display = 'block';
+            window.scrollTo({
+                top: document.getElementById('donationForm').offsetTop - 100,
+                behavior: 'smooth'
+            });
+        }
+
+        // Amount buttons functionality
+        document.querySelectorAll('.amount-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                document.querySelector('.custom-amount').value = '';
+            });
+        });
+
+        // Frequency buttons functionality
+        document.querySelectorAll('.frequency-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.frequency-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Custom amount input
+        document.querySelector('.custom-amount').addEventListener('input', function() {
+            document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+        });
+    </script>
 </body>
 </html>

@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тропа Добра - Развивающий палаточный лагерь для детей из детского дома "Салют"</title>
+    <title>Тропа Добра - Развивающий палаточный лагерь для детей</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <h1>🌲 Тропа Добра</h1>
+                <div class="logo">
+                    <i class="fas fa-tree"></i>
+                    <span>Тропа Добра</span>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Главная</a></li>
@@ -32,80 +36,170 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Тропа Добра</h1>
-            <p class="hero-subtitle">Палаточный лагерь для детей из детских домов Новосибирска</p>
-            <p class="hero-description">Образовательный проект, объединяющий волонтеров, экологов и ветеранов для создания незабываемого опыта для детей</p>
-            <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary">Узнать больше</a>
-                <a href="support.html" class="btn btn-secondary">Поддержать проект</a>
-            </div>
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
         </div>
-        <div class="hero-image">
-            <div class="placeholder-image">🌳🏕️</div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Тропа <span class="highlight">Добра</span></h1>
+                    <p class="hero-subtitle">Палаточный лагерь для детей из детского дома "Салют"</p>
+                    <p class="hero-description">Образовательный проект, объединяющий волонтеров, специалистов и ветеранов для создания незабываемого опыта и развития детей через природу и общение</p>
+                    <div class="hero-buttons">
+                        <a href="about.html" class="btn btn-primary">
+                            <i class="fas fa-play-circle"></i>
+                            Узнать о проекте
+                        </a>
+                        <a href="support.html" class="btn btn-secondary">
+                            <i class="fas fa-heart"></i>
+                            Поддержать
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-users"></i>
+                            <span>Волонтеры</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-fire-extinguisher"></i>
+                            <span>Специалисты</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-history"></i>
+                            <span>Ветераны</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Preview -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">О проекте</h2>
+            <div class="section-header">
+                <h2 class="section-title">Три образовательные зоны</h2>
+                <p class="section-subtitle">Уникальная программа развития через практику и общение</p>
+            </div>
             <div class="zones-grid">
                 <div class="zone-card">
-                    <div class="zone-icon">👨‍🎓</div>
-                    <h3>Зона 1: Волонтеры</h3>
-                    <p>Молодежь 14-20 лет обучает детей сортировке мусора в игровой форме</p>
-                    <a href="about.html#zone1" class="btn-link">Подробнее →</a>
+                    <div class="zone-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="zone-badge">Зона 1</div>
+                    <h3>Волонтеры</h3>
+                    <p>Молодежь 14-20 лет в игровой форме обучает детей экологическим привычкам и сортировке мусора</p>
+                    <ul class="zone-features">
+                        <li><i class="fas fa-check"></i> Интерактивные игры</li>
+                        <li><i class="fas fa-check"></i> Эко-квесты</li>
+                        <li><i class="fas fa-check"></i> Творческие мастерские</li>
+                    </ul>
+                    <a href="about.html#zone1" class="btn-link">
+                        Подробнее 
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="zone-card">
-                    <div class="zone-icon">🚒</div>
-                    <h3>Зона 2: Специалисты</h3>
-                    <p>Пожарные, лесники, геологи делятся профессиональным опытом</p>
-                    <a href="about.html#zone2" class="btn-link">Подробнее →</a>
+
+                <div class="zone-card featured">
+                    <div class="zone-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="zone-badge">Зона 2</div>
+                    <h3>Специалисты</h3>
+                    <p>Пожарные, лесники, геологи демонстрируют оборудование и рассказывают о своей работе</p>
+                    <ul class="zone-features">
+                        <li><i class="fas fa-check"></i> Живые демонстрации</li>
+                        <li><i class="fas fa-check"></i> Профессиональные истории</li>
+                        <li><i class="fas fa-check"></i> Практические навыки</li>
+                    </ul>
+                    <a href="about.html#zone2" class="btn-link">
+                        Подробнее 
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
+
                 <div class="zone-card">
-                    <div class="zone-icon">👵</div>
-                    <h3>Зона 3: Ветераны</h3>
-                    <p>Опытные специалисты рассказывают истории из профессиональной жизни</p>
-                    <a href="about.html#zone3" class="btn-link">Подробнее →</a>
+                    <div class="zone-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="zone-badge">Зона 3</div>
+                    <h3>Ветераны труда</h3>
+                    <p>Опытные специалисты делятся мудростью и историями из профессиональной жизни</p>
+                    <ul class="zone-features">
+                        <li><i class="fas fa-check"></i> Живые истории</li>
+                        <li><i class="fas fa-check"></i> Дискуссии</li>
+                        <li><i class="fas fa-check"></i> Наставничество</li>
+                    </ul>
+                    <a href="about.html#zone3" class="btn-link">
+                        Подробнее 
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats -->
-    <section class="section section-dark">
+    <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat">
-                    <div class="stat-number">3</div>
-                    <div class="stat-label">Образовательные зоны</div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Образовательные зоны</div>
+                    </div>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Детей из детских домов</div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Детей из детских домов</div>
+                    </div>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">30+</div>
-                    <div class="stat-label">Волонтеров и специалистов</div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="30">0</div>
+                        <div class="stat-label">Волонтеров и специалистов</div>
+                    </div>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">1</div>
-                    <div class="stat-label">Незабываемое время</div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="7">0</div>
+                        <div class="stat-label">Дней приключений</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="section">
+    <section class="cta-section">
         <div class="container">
-            <div class="cta-box">
-                <h2>Присоединяйтесь к проекту!</h2>
-                <p>Станьте волонтером, партнером или просто поддержите наше начинание</p>
+            <div class="cta-content">
+                <h2>Готовы изменить жизни детей?</h2>
+                <p>Присоединяйтесь к нашему проекту как волонтер, партнер или спонсор</p>
                 <div class="cta-buttons">
-                    <a href="participants.html" class="btn btn-primary">Стать участником</a>
-                    <a href="contact.html" class="btn btn-outline">Связаться с нами</a>
+                    <a href="participants.html" class="btn btn-light">
+                        <i class="fas fa-user-plus"></i>
+                        Стать участником
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light">
+                        <i class="fas fa-envelope"></i>
+                        Связаться с нами
+                    </a>
                 </div>
             </div>
         </div>
@@ -116,34 +210,59 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>🌲 Тропа Добра</h3>
-                    <p>Развивающий палаточный лагерь для детей из десткого дома "Салют" </p>
+                    <div class="footer-logo">
+                        <i class="fas fa-tree"></i>
+                        <span>Тропа Добра</span>
+                    </div>
+                    <p class="footer-description">Развивающий палаточный лагерь для детей из детского дома "Салют" города Новосибирска</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
+                
                 <div class="footer-section">
                     <h4>Навигация</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="about.html">О проекте</a></li>
                         <li><a href="participants.html">Участники</a></li>
                         <li><a href="news.html">Новости</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
                     <h4>Контакты</h4>
-                    <ul>
-                        <li>📧 tropa-dobra@email.ru</li>
-                        <li>📱 Telegram канал</li>
-                        <li>📍 Новосибирск</li>
-                    </ul>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tropa-dobra@email.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram канал</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Новосибирск</span>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>Подписаться</h4>
+                    <h4>Рассылка</h4>
+                    <p>Подпишитесь на updates о проекте</p>
                     <form class="subscribe-form">
                         <input type="email" placeholder="Ваш email" required>
-                        <button type="submit">Подписаться</button>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
+            
             <div class="footer-bottom">
                 <p>&copy; 2025 Тропа Добра. Все права защищены.</p>
             </div>

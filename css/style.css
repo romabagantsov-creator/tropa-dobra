@@ -912,3 +912,586 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center;
     }
 }
+
+/* Стили для интерактивной страницы */
+.interactive-page {
+    background: linear-gradient(180deg, #87CEEB 0%, #98FB98 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-title {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    color: #34495e;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Стартовый экран */
+.start-screen {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.start-title {
+    font-size: 2.5rem;
+    color: #27ae60;
+    margin-bottom: 1rem;
+}
+
+.start-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.start-btn {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    border: none;
+    padding: 1.2rem 3rem;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.4);
+    font-weight: 600;
+}
+
+.start-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(39, 174, 96, 0.6);
+}
+
+/* Основная игровая сцена */
+.game-scene {
+    display: none;
+    position: relative;
+    height: 600px;
+    background: linear-gradient(180deg, #87CEEB 0%, #98FB98 70%);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #2c3e50;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+/* Элементы природы */
+.sun {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    width: 80px;
+    height: 80px;
+    background: #FFD700;
+    border-radius: 50%;
+    box-shadow: 0 0 60px #FFA726;
+    animation: glow 4s ease-in-out infinite;
+}
+
+.cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    animation: moveCloud 25s linear infinite;
+}
+
+.cloud-1 {
+    width: 100px;
+    height: 50px;
+    top: 60px;
+    left: -120px;
+    animation-delay: 0s;
+}
+
+.cloud-2 {
+    width: 80px;
+    height: 40px;
+    top: 100px;
+    left: -120px;
+    animation-delay: 8s;
+}
+
+.cloud-3 {
+    width: 120px;
+    height: 60px;
+    top: 150px;
+    left: -120px;
+    animation-delay: 15s;
+}
+
+/* Палатки-зоны */
+.tent {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    width: 150px;
+    height: 120px;
+}
+
+.tent:hover {
+    transform: translateY(-5px) scale(1.05);
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.4));
+}
+
+.tent-1 {
+    left: 15%;
+    bottom: 80px;
+}
+
+.tent-2 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+}
+
+.tent-3 {
+    right: 15%;
+    bottom: 80px;
+}
+
+.tent-label {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    white-space: nowrap;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+/* Внутренние сцены палаток */
+.tent-scene {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+.tent-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+    height: 85%;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.scene-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.scene-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.scene-subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.scene-animation {
+    height: 400px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #e9ecef;
+}
+
+.scene-description {
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 101;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Стили для палатки 1 - Волонтеры */
+.recycling-scene {
+    background: linear-gradient(180deg, #74b9ff 0%, #0984e3 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.character {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.character img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.volunteer1 { bottom: 50px; left: 100px; }
+.volunteer2 { bottom: 50px; left: 300px; }
+.volunteer3 { bottom: 50px; left: 500px; }
+.lesyonok-tent1 { bottom: 50px; left: 700px; }
+
+.trash-bin {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.trash-bin img {
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.trash-bin span {
+    display: block;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.bin-paper { position: absolute; bottom: 30px; left: 200px; }
+.bin-plastic { position: absolute; bottom: 30px; left: 400px; }
+.bin-glass { position: absolute; bottom: 30px; left: 600px; }
+
+.flying-trash {
+    position: absolute;
+    animation: floatUp 3s linear infinite;
+}
+
+.flying-trash img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.paper-trash { top: 100px; left: 150px; animation-delay: 0s; }
+.plastic-trash { top: 120px; left: 350px; animation-delay: 1s; }
+.glass-trash { top: 140px; left: 550px; animation-delay: 2s; }
+
+.score-board {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* Стили для палатки 2 - Пожарные */
+.fireman-scene {
+    background: linear-gradient(180deg, #ff7675 0%, #d63031 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fireman-character {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fireman-character img {
+    width: 100px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.kids-row {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kid-seat {
+    text-align: center;
+}
+
+.kid-seat img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    animation: listen 2s ease-in-out infinite;
+}
+
+.kid-1 { animation-delay: 0s; }
+.kid-2 { animation-delay: 0.3s; }
+.kid-3 { animation-delay: 0.6s; }
+.kid-4 { animation-delay: 0.9s; }
+
+.fire-equipment {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.equipment-item {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.equipment-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.equipment-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #2c3e50;
+}
+
+/* Стили для палатки 3 - Ветераны */
+.veteran-scene {
+    background: linear-gradient(180deg, #a29bfe 0%, #6c5ce7 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
+
+.veteran-character {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.veteran-character img {
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.kids-circle {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.memory-items {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.memory-item {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.memory-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.memory-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #2c3e50;
+}
+
+/* Деревья */
+.tree {
+    position: absolute;
+    bottom: 0;
+}
+
+.tree-1 { left: 50px; }
+.tree-2 { right: 50px; }
+
+.tree img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Лесенок на главной сцене */
+.lesyonok-main {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lesyonok-main img {
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Анимации */
+@keyframes glow {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes moveCloud {
+    0% { transform: translateX(-200px); }
+    100% { transform: translateX(1400px); }
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(100px) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes listen {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .game-scene {
+        height: 500px;
+    }
+    
+    .tent {
+        transform: scale(0.8);
+    }
+    
+    .tent:hover {
+        transform: scale(0.85) translateY(-5px);
+    }
+    
+    .tent-1 { left: 5%; }
+    .tent-3 { right: 5%; }
+    
+    .tent-content {
+        width: 95%;
+        height: 90%;
+        padding: 1rem;
+    }
+    
+    .scene-animation {
+        height: 300px;
+    }
+    
+    .character img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .trash-bin img {
+        width: 60px;
+        height: 80px;
+    }
+    
+    .kids-row {
+        gap: 30px;
+    }
+    
+    .kids-circle {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-scene {
+        height: 400px;
+    }
+    
+    .tent {
+        transform: scale(0.6);
+    }
+    
+    .tent:hover {
+        transform: scale(0.65) translateY(-5px);
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .scene-title {
+        font-size: 1.5rem;
+    }
+}

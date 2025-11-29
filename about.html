@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О проекте - Тропа Добра</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <h1>🌲 Тропа Добра</h1>
+                <div class="logo">
+                    <i class="fas fa-tree"></i>
+                    <span>Тропа Добра</span>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html" class="active">О проекте</a></li>
                 <li><a href="participants.html">Участники</a></li>
                 <li><a href="news.html">Новости</a></li>
+                <li><a href="animation.html">Интерактивное представление</a></li>
                 <li><a href="contact.html">Контакты</a></li>
                 <li><a href="support.html" class="btn-donate">Поддержать</a></li>
             </ul>
@@ -30,124 +35,122 @@
         </nav>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Hero Section -->
+    <section class="about-hero">
         <div class="container">
-            <h1>О проекте</h1>
-            <p>Узнайте больше о нашей миссии и трех образовательных зонах</p>
+            <div class="about-hero-content">
+                <h1 class="about-title">О проекте "Тропа Добра"</h1>
+                <p class="about-subtitle">Уникальный палаточный лагерь для детей из детского дома "Созвездие" города Новосибирска</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Образовательные зоны</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Детей участников</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Организаторов</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Дней приключений</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Mission -->
+    <!-- Mission Section -->
     <section class="section">
         <div class="container">
             <div class="mission-grid">
                 <div class="mission-content">
-                    <h2>Наша миссия</h2>
-                    <p>Создать уникальное образовательное пространство для детей из детских домов Новосибирска, где они смогут:</p>
-                    <ul class="mission-list">
-                        <li>📚 Получить практические знания об экологии</li>
-                        <li>👥 Пообщаться с профессионалами разных сфер</li>
-                        <li>🌳 Погрузиться в природу и научиться бережному отношению к окружающей среде</li>
-                        <li>🎯 Найти вдохновение для будущего профессионального развития</li>
-                    </ul>
+                    <h2 class="section-title">Наша миссия</h2>
+                    <p class="mission-text">Мы создаем уникальное образовательное пространство, где дети из детского дома "Созвездие" могут получить бесценный опыт общения с природой, найти новых друзей и раскрыть свой потенциал через три специальные образовательные зоны.</p>
+                    
+                    <div class="mission-cards">
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Социальная адаптация</h3>
+                            <p>Развиваем коммуникативные навыки и уверенность в себе через взаимодействие в новой среде</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Экологическое воспитание</h3>
+                            <p>Формируем бережное отношение к природе через практические занятия и интерактивные игры</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Профориентация</h3>
+                            <p>Знакомим с профессиями в сфере экологии и природоохраны через живое общение с практиками</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mission-image">
-                    <div class="placeholder-image">🏕️✨</div>
+                <div class="mission-visual">
+                    <div class="visual-container">
+                        <div class="placeholder-image mission-placeholder">
+                            <i class="fas fa-campground"></i>
+                            <p>Летний палаточный лагерь 2026</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Zones Details -->
-    <section class="section section-dark" id="zone1">
+    <!-- Project Details -->
+    <section class="section section-dark">
         <div class="container">
-            <div class="zone-detail">
-                <div class="zone-header">
-                    <div class="zone-number">01</div>
-                    <h2>Зона волонтеров</h2>
-                </div>
-                <div class="zone-content">
-                    <div class="zone-info">
-                        <h3>👨‍🎓 Молодежь обучает молодежь</h3>
-                        <p><strong>Возраст волонтеров:</strong> 14-20 лет</p>
-                        <p><strong>Формат:</strong> Интерактивные игры и мастер-классы</p>
-                        
-                        <h4>Основные темы:</h4>
-                        <ul>
-                            <li>♻️ Сортировка мусора и переработка</li>
-                            <li>🌱 Основы экологической грамотности</li>
-                            <li>🎮 Эко-квесты и интерактивные задания</li>
-                            <li>🏆 Соревнования по сбору и сортировке отходов</li>
-                        </ul>
-                        
-                        <h4>Цели:</h4>
-                        <ul>
-                            <li>Сформировать экологическое сознание</li>
-                            <li>Научить практическим навыкам сортировки</li>
-                            <li>Развить ответственность за окружающую среду</li>
-                        </ul>
-                    </div>
-                    <div class="zone-stats">
-                        <div class="stat-card">
-                            <div class="stat-number">15-20</div>
-                            <div class="stat-label">Волонтеров</div>
+            <div class="project-details">
+                <h2 class="section-title">Детали проекта</h2>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-calendar-alt"></i>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Интерактивных станций</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">3</div>
-                            <div class="stat-label">Часа занятий в день</div>
+                        <div class="detail-content">
+                            <h3>Когда?</h3>
+                            <p>Лето 2026 года</p>
+                            <span>7 дней в палаточном лагере</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="zone2">
-        <div class="container">
-            <div class="zone-detail">
-                <div class="zone-header">
-                    <div class="zone-number">02</div>
-                    <h2>Зона профессионалов</h2>
-                </div>
-                <div class="zone-content">
-                    <div class="zone-info">
-                        <h3>🚒 Встречи с настоящими героями</h3>
-                        <p><strong>Участники:</strong> Пожарные, лесники, геологи, экологи</p>
-                        <p><strong>Формат:</strong> Демонстрации, рассказы, интерактивы</p>
-                        
-                        <h4>Программа:</h4>
-                        <ul>
-                            <li>🔥 Показательные выступления пожарных</li>
-                            <li>🌲 Мастер-классы от лесников по определению растений</li>
-                            <li>⛰️ Рассказы геологов о полезных ископаемых региона</li>
-                            <li>🎬 Просмотр тематических мультфильмов и фильмов</li>
-                            <li>🛠️ Знакомство с профессиональным оборудованием</li>
-                        </ul>
-                        
-                        <h4>Особенности:</h4>
-                        <ul>
-                            <li>Живое общение с профессионалами</li>
-                            <li>Возможность примерить снаряжение</li>
-                            <li>Ответы на вопросы о профессиях</li>
-                        </ul>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>Где?</h3>
+                            <p>Новосибирская область</p>
+                            <span>Живописный лесной массив</span>
+                        </div>
                     </div>
-                    <div class="zone-stats">
-                        <div class="stat-card">
-                            <div class="stat-number">8-12</div>
-                            <div class="stat-label">Специалистов</div>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-users"></i>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-number">6</div>
-                            <div class="stat-label">Профессий представлено</div>
+                        <div class="detail-content">
+                            <h3>Для кого?</h3>
+                            <p>Дети 10-15 лет</p>
+                            <span>Из детского дома "Созвездие"</span>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-number">4</div>
-                            <div class="stat-label">Часа программ ежедневно</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>Цель</h3>
+                            <p>Образование через природу</p>
+                            <span>3 уникальные зоны развития</span>
                         </div>
                     </div>
                 </div>
@@ -155,90 +158,486 @@
         </div>
     </section>
 
-    <section class="section section-dark" id="zone3">
-        <div class="container">
-            <div class="zone-detail">
-                <div class="zone-header">
-                    <div class="zone-number">03</div>
-                    <h2>Зона ветеранов</h2>
-                </div>
-                <div class="zone-content">
-                    <div class="zone-info">
-                        <h3>👵 Мудрость поколений</h3>
-                        <p><strong>Участники:</strong> Ветераны лесного хозяйства, пожарные на пенсии, экологи-энтузиасты</p>
-                        <p><strong>Формат:</strong> Неформальные беседы, истории, дискуссии</p>
-                        
-                        <h4>Темы встреч:</h4>
-                        <ul>
-                            <li>📖 Истории из профессиональной жизни</li>
-                            <li>💭 Как изменилась природа за последние 50 лет</li>
-                            <li>🎯 Важность сохранения природы для будущих поколений</li>
-                            <li>🤝 Преемственность поколений в профессии</li>
-                        </ul>
-                        
-                        <h4>Ценность:</h4>
-                        <ul>
-                            <li>Передача жизненного опыта</li>
-                            <li>Формирование уважения к старшим</li>
-                            <li>Исторический контекст экологических проблем</li>
-                            <li>Личный пример преданности профессии</li>
-                        </ul>
-                    </div>
-                    <div class="zone-stats">
-                        <div class="stat-card">
-                            <div class="stat-number">5-8</div>
-                            <div class="stat-label">Ветеранов</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">40+</div>
-                            <div class="stat-label">Лет опыта в среднем</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">2</div>
-                            <div class="stat-label">Встречи в день</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Schedule -->
+    <!-- Team Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Примерный расписание дня</h2>
-            <div class="schedule">
-                <div class="schedule-item">
-                    <div class="time">09:00-10:00</div>
-                    <div class="activity">Завтрак и утренний сбор</div>
+            <div class="section-header">
+                <h2 class="section-title">Команда организаторов</h2>
+                <p class="section-subtitle">Профессиональная команда энтузиастов, объединённая общей целью</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Баганцов Роман Евгеньевич</h3>
+                    <p class="member-role">Руководитель проекта</p>
+                    <p class="member-contact">
+                        <i class="fas fa-phone"></i> 8-923-225-62-20<br>
+                        <i class="fab fa-telegram"></i> @RomanBagantsov
+                    </p>
                 </div>
-                <div class="schedule-item">
-                    <div class="time">10:00-13:00</div>
-                    <div class="activity">Зона волонтеров: Эко-игры и сортировка</div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Дмитриенко София Олеговна</h3>
+                    <p class="member-role">Координатор волонтёров</p>
                 </div>
-                <div class="schedule-item">
-                    <div class="time">13:00-14:00</div>
-                    <div class="activity">Обед</div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Крамаренко Алиса Максимовна</h3>
+                    <p class="member-role">Организатор мероприятий</p>
                 </div>
-                <div class="schedule-item">
-                    <div class="time">14:00-16:00</div>
-                    <div class="activity">Зона профессионалов: Встречи со специалистами</div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Кузнецова Эвелина Валерьевна</h3>
+                    <p class="member-role">Координатор образовательных программ</p>
                 </div>
-                <div class="schedule-item">
-                    <div class="time">16:00-17:00</div>
-                    <div class="activity">Зона ветеранов: Истории и беседы</div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Щёголь Антон Александрович</h3>
+                    <p class="member-role">Технический координатор</p>
                 </div>
-                <div class="schedule-item">
-                    <div class="time">17:00-18:00</div>
-                    <div class="activity">Свободное время и игры</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zones Overview -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Три образовательные зоны</h2>
+                <p class="section-subtitle">Уникальная программа, объединяющая разные поколения и профессии для всестороннего развития детей</p>
+            </div>
+            
+            <div class="zones-overview">
+                <div class="zone-preview" id="zone1-preview">
+                    <div class="zone-color red"></div>
+                    <div class="zone-content">
+                        <div class="zone-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Зона волонтёров</h3>
+                        <p>Молодёжь 14-20 лет в игровой форме обучает детей экологическим привычкам и сортировке мусора</p>
+                        <ul class="zone-features">
+                            <li><i class="fas fa-check"></i> Интерактивная сортировка мусора</li>
+                            <li><i class="fas fa-check"></i> Эко-квесты и соревнования</li>
+                            <li><i class="fas fa-check"></i> Творческие мастер-классы</li>
+                            <li><i class="fas fa-check"></i> Игровое обучение</li>
+                        </ul>
+                        <a href="#zone1-detail" class="btn-link">Узнать подробнее</a>
+                    </div>
                 </div>
-                <div class="schedule-item">
-                    <div class="time">18:00-19:00</div>
-                    <div class="activity">Ужин</div>
+
+                <div class="zone-preview" id="zone2-preview">
+                    <div class="zone-color blue"></div>
+                    <div class="zone-content">
+                        <div class="zone-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Зона специалистов</h3>
+                        <p>Пожарные, лесники, геологи и экологи делятся профессиональным опытом и показывают оборудование</p>
+                        <ul class="zone-features">
+                            <li><i class="fas fa-check"></i> Демонстрация профессионального оборудования</li>
+                            <li><i class="fas fa-check"></i> Реальные истории из работы</li>
+                            <li><i class="fas fa-check"></i> Практические мастер-классы</li>
+                            <li><i class="fas fa-check"></i> Ответы на вопросы о профессиях</li>
+                        </ul>
+                        <a href="#zone2-detail" class="btn-link">Узнать подробнее</a>
+                    </div>
                 </div>
-                <div class="schedule-item">
-                    <div class="time">19:00-21:00</div>
-                    <div class="activity">Вечерний костер, песни, рефлексия</div>
+
+                <div class="zone-preview" id="zone3-preview">
+                    <div class="zone-color green"></div>
+                    <div class="zone-content">
+                        <div class="zone-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Зона ветеранов</h3>
+                        <p>Опытные специалисты передают мудрость, истории из профессиональной жизни и жизненный опыт</p>
+                        <ul class="zone-features">
+                            <li><i class="fas fa-check"></i> Живые истории из прошлого</li>
+                            <li><i class="fas fa-check"></i> Дискуссии и обсуждения</li>
+                            <li><i class="fas fa-check"></i> Наставничество и советы</li>
+                            <li><i class="fas fa-check"></i> Преемственность поколений</li>
+                        </ul>
+                        <a href="#zone3-detail" class="btn-link">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zone 1 Detail -->
+    <section class="zone-detail-section" id="zone1-detail">
+        <div class="container">
+            <div class="zone-detail">
+                <div class="zone-header">
+                    <div class="zone-badge">01</div>
+                    <div class="zone-title-content">
+                        <h2>Зона волонтёров</h2>
+                        <p class="zone-subtitle">Молодёжь обучает молодёжь через игру и взаимодействие</p>
+                    </div>
+                </div>
+                
+                <div class="zone-detail-content">
+                    <div class="zone-info">
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>15-20 волонтёров</h4>
+                                <p>Активные студенты и школьники 14-20 лет</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h4>3 часа занятий daily</h4>
+                                <p>Утренние интерактивные сессии</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <h4>5+ игровых станций</h4>
+                                <p>Эко-квесты и образовательные игры</p>
+                            </div>
+                        </div>
+
+                        <div class="zone-activities">
+                            <h3>Ключевые активности</h3>
+                            <div class="activities-grid">
+                                <div class="activity-item">
+                                    <div class="activity-icon">♻️</div>
+                                    <div class="activity-content">
+                                        <h4>Эко-сортировка</h4>
+                                        <p>Интерактивная игра по раздельному сбору отходов с системой поощрений</p>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">🌱</div>
+                                    <div class="activity-content">
+                                        <h4>Природный квест</h4>
+                                        <p>Приключенческая игра с экологическими заданиями на территории лагеря</p>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">🎨</div>
+                                    <div class="activity-content">
+                                        <h4>Вторая жизнь вещей</h4>
+                                        <p>Мастер-классы по созданию поделок из перерабатываемых материалов</p>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">🏆</div>
+                                    <div class="activity-content">
+                                        <h4>Эко-чемпионат</h4>
+                                        <p>Соревнования между командами на знания экологических правил</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="zone-visual">
+                        <div class="visual-card">
+                            <div class="placeholder-image">
+                                <i class="fas fa-recycle"></i>
+                                <p>Зона волонтёров</p>
+                            </div>
+                            <div class="visual-text">
+                                <h4>Играя - учимся!</h4>
+                                <p>Дети осваивают экологические привычки через весёлые игры и соревнования под руководством молодых волонтёров</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zone 2 Detail -->
+    <section class="zone-detail-section section-dark" id="zone2-detail">
+        <div class="container">
+            <div class="zone-detail">
+                <div class="zone-header">
+                    <div class="zone-badge">02</div>
+                    <div class="zone-title-content">
+                        <h2>Зона специалистов</h2>
+                        <p class="zone-subtitle">Встречи с настоящими героями природоохранных профессий</p>
+                    </div>
+                </div>
+                
+                <div class="zone-detail-content">
+                    <div class="zone-info">
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h4>8-12 специалистов</h4>
+                                <p>Действующие профессионалы из разных сфер</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <h4>6+ профессий</h4>
+                                <p>Пожарные, лесники, экологи, геологи и другие</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h4>Реальное оборудование</h4>
+                                <p>Демонстрация профессиональных инструментов и техники</p>
+                            </div>
+                        </div>
+
+                        <div class="professions-list">
+                            <h3>Представленные профессии</h3>
+                            <div class="professions-grid">
+                                <div class="profession-item">
+                                    <div class="profession-icon">🚒</div>
+                                    <div class="profession-content">
+                                        <h4>Пожарные МЧС</h4>
+                                        <p>Демонстрация пожарной техники, рассказы о тушении лесных пожаров, основы безопасности</p>
+                                    </div>
+                                </div>
+                                <div class="profession-item">
+                                    <div class="profession-icon">🌲</div>
+                                    <div class="profession-content">
+                                        <h4>Лесники и егеря</h4>
+                                        <p>Знакомство с работой по сохранению лесов, определение растений, следы животных</p>
+                                    </div>
+                                </div>
+                                <div class="profession-item">
+                                    <div class="profession-icon">⛰️</div>
+                                    <div class="profession-content">
+                                        <h4>Геологи</h4>
+                                        <p>Рассказы о полезных ископаемых региона, демонстрация минералов и оборудования</p>
+                                    </div>
+                                </div>
+                                <div class="profession-item">
+                                    <div class="profession-icon">🔬</div>
+                                    <div class="profession-content">
+                                        <h4>Экологи-исследователи</h4>
+                                        <p>Практические занятия по исследованию качества воды и воздуха, мониторинг окружающей среды</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="zone-visual">
+                        <div class="visual-card">
+                            <div class="placeholder-image">
+                                <i class="fas fa-fire-extinguisher"></i>
+                                <p>Зона специалистов</p>
+                            </div>
+                            <div class="visual-text">
+                                <h4>Профессии вживую!</h4>
+                                <p>Дети видят настоящую технику, прикасаются к профессиональному оборудованию и общаются с героями, которые каждый день защищают природу</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zone 3 Detail -->
+    <section class="zone-detail-section" id="zone3-detail">
+        <div class="container">
+            <div class="zone-detail">
+                <div class="zone-header">
+                    <div class="zone-badge">03</div>
+                    <div class="zone-title-content">
+                        <h2>Зона ветеранов</h2>
+                        <p class="zone-subtitle">Мудрость, проверенная временем и профессиональным опытом</p>
+                    </div>
+                </div>
+                
+                <div class="zone-detail-content">
+                    <div class="zone-info">
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-history"></i>
+                                </div>
+                                <h4>5-8 ветеранов</h4>
+                                <p>Опытные специалисты с многолетним стажем</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <h4>40+ лет опыта</h4>
+                                <p>Средний стаж работы в природоохранной сфере</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h4>Неформальные встречи</h4>
+                                <p>Душевные беседы в уютной атмосфере</p>
+                            </div>
+                        </div>
+
+                        <div class="stories-section">
+                            <h3>Темы для бесед и дискуссий</h3>
+                            <div class="stories-grid">
+                                <div class="story-item">
+                                    <div class="story-icon">📖</div>
+                                    <div class="story-content">
+                                        <h4>Истории из профессиональной жизни</h4>
+                                        <p>Как работали пожарные и лесники 30-40 лет назад, самые запоминающиеся случаи из практики</p>
+                                    </div>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-icon">💭</div>
+                                    <div class="story-content">
+                                        <h4>Экологические изменения</h4>
+                                        <p>Наблюдения за изменениями в природе и экосистемах за долгие годы работы</p>
+                                    </div>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-icon">🎯</div>
+                                    <div class="story-content">
+                                        <h4>Жизненные уроки и ценности</h4>
+                                        <p>Мудрость, советы и принципы, которые помогли в профессии и жизни</p>
+                                    </div>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-icon">🤝</div>
+                                    <div class="story-content">
+                                        <h4>Преемственность поколений</h4>
+                                        <p>Как знания и опыт передаются от старших к младшим, важность наставничества</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="zone-visual">
+                        <div class="visual-card">
+                            <div class="placeholder-image">
+                                <i class="fas fa-book-reader"></i>
+                                <p>Зона ветеранов</p>
+                            </div>
+                            <div class="visual-text">
+                                <h4>Живая история!</h4>
+                                <p>Дети слушают настоящие истории из жизни профессионалов, перенимают опыт и учатся уважению к старшему поколению в атмосфере доверительного общения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Примерное расписание дня в лагере</h2>
+                <p class="section-subtitle">Каждый день наполнен интересными активностями, новыми знаниями и возможностями для развития</p>
+            </div>
+            
+            <div class="schedule-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">09:00 - 10:00</div>
+                    <div class="timeline-content">
+                        <h4>Завтрак и утренний сбор</h4>
+                        <p>Начинаем день с энергичной зарядки на свежем воздухе, вкусного завтрака и планирования активностей на день</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">10:00 - 13:00</div>
+                    <div class="timeline-content">
+                        <h4>Зона волонтёров: Эко-активности</h4>
+                        <p>Интерактивные игры по сортировке мусора, эко-квесты, творческие мастер-классы и образовательные игры</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">13:00 - 14:00</div>
+                    <div class="timeline-content">
+                        <h4>Обед на природе</h4>
+                        <p>Вкусная и полезная еда, приготовленная с заботой о здоровье, в кругу новых друзей</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">14:00 - 16:00</div>
+                    <div class="timeline-content">
+                        <h4>Зона специалистов: Профессиональные встречи</h4>
+                        <p>Встречи с пожарными, лесниками, экологами, демонстрация оборудования, ответы на вопросы</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">16:00 - 17:00</div>
+                    <div class="timeline-content">
+                        <h4>Зона ветеранов: Истории и мудрость</h4>
+                        <p>Душевные беседы с опытными специалистами, истории из профессиональной жизни, обсуждение важных тем</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">17:00 - 18:00</div>
+                    <div class="timeline-content">
+                        <h4>Свободное время и игры</h4>
+                        <p>Отдых на природе, спортивные игры, общение с новыми друзьями, творческие занятия</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">18:00 - 19:00</div>
+                    <div class="timeline-content">
+                        <h4>Ужин и подведение итогов</h4>
+                        <p>Совместная трапеза, обсуждение ярких моментов дня, планирование следующего дня</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">19:00 - 21:00</div>
+                    <div class="timeline-content">
+                        <h4>Вечерний костёр</h4>
+                        <p>Традиционные песни под гитару, истории у костра, рефлексия, игры и создание тёплых воспоминаний</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="cta-about">
+                <h2>Станьте частью нашего проекта!</h2>
+                <p>Присоединяйтесь к команде волонтёров, станьте партнёром или поддержите проект - вместе мы сможем сделать мир лучше для детей из детского дома "Созвездие"</p>
+                <div class="cta-buttons">
+                    <a href="participants.html" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i>
+                        Стать волонтёром
+                    </a>
+                    <a href="support.html" class="btn btn-secondary">
+                        <i class="fas fa-heart"></i>
+                        Поддержать проект
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light">
+                        <i class="fas fa-envelope"></i>
+                        Связаться с нами
+                    </a>
                 </div>
             </div>
         </div>
@@ -249,36 +648,61 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>🌲 Тропа Добра</h3>
-                    <p>Палаточный лагерь для детей из детских домов Новосибирска</p>
+                    <div class="footer-logo">
+                        <i class="fas fa-tree"></i>
+                        <span>Тропа Добра</span>
+                    </div>
+                    <p class="footer-description">Развивающий палаточный лагерь для детей из детского дома "Созвездие" города Новосибирска</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
+                
                 <div class="footer-section">
                     <h4>Навигация</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="about.html">О проекте</a></li>
                         <li><a href="participants.html">Участники</a></li>
                         <li><a href="news.html">Новости</a></li>
+                        <li><a href="animation.html">Интерактивное представление</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
                     <h4>Контакты</h4>
-                    <ul>
-                        <li>📧 tropa-dobra@email.ru</li>
-                        <li>📱 Telegram канал</li>
-                        <li>📍 Новосибирск</li>
-                    </ul>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tropa-dobra@email.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-telegram"></i>
+                            <span>@RomanBagantsov</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Новосибирск, ул. Дуси Ковальчук, 384</span>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>Подписаться</h4>
+                    <h4>Рассылка</h4>
+                    <p>Подпишитесь на обновления о проекте</p>
                     <form class="subscribe-form">
                         <input type="email" placeholder="Ваш email" required>
-                        <button type="submit">Подписаться</button>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 Тропа Добра. Все права защищены.</p>
+                <p>&copy; 2025 Тропа Добра. Все права защищены. Проект планируется к реализации летом 2026 года.</p>
             </div>
         </div>
     </footer>

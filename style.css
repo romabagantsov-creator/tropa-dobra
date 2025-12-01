@@ -261,38 +261,65 @@ section h2 {
 }
 
 /* Изображение участника */
-.member-image {
+/* Обновленные стили для бейджей */
+.member-image-container {
     position: relative;
+    display: inline-block;
     margin-bottom: 1.5rem;
 }
 
-.member-photo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #2E8B57;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(45deg, #e9ecef, #f8f9fa);
+.member-image {
+    position: relative;
+    display: inline-block;
 }
 
 .member-badge {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: -8px; /* Поднимаем бейдж над фото */
+    right: -8px;
     background: #FF6B35;
     color: white;
     padding: 0.3rem 0.8rem;
-    border-radius: 15px;
+    border-radius: 12px;
     font-size: 0.75rem;
     font-weight: bold;
-    box-shadow: 0 3px 10px rgba(255, 107, 53, 0.3);
-    white-space: nowrap; /* запретить перенос текста */
-    max-width: 80px; /* ограничить максимальную ширину */
-    overflow: hidden;
-    text-overflow: ellipsis; /* троеточие если не влезает */
-    text-align: center;
-    line-height: 1.2;
+    box-shadow: 0 3px 8px rgba(255, 107, 53, 0.4);
+    white-space: nowrap;
+    z-index: 10; /* Поверх фото */
+    border: 2px solid white; /* Белая рамка чтобы отделить от фото */
+}
+
+/* Разные цвета для разных ролей если нужно */
+.member-badge.director {
+    background: #FF6B35; /* Оранжевый */
+}
+
+.member-badge.deputy {
+    background: #4ECDC4; /* Бирюзовый для разнообразия */
+}
+
+/* Фото с бейджем нужно немного поднять */
+.team-member:has(.member-badge) .member-photo {
+    margin-bottom: 10px; /* Компенсируем высоту бейджа */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .member-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+        bottom: -6px;
+        right: -6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .member-badge {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.5rem;
+        bottom: -5px;
+        right: -5px;
+    }
 }
 
 /* Информация об участнике */
@@ -2486,6 +2513,7 @@ section h2 {
         padding: 1rem;
     }
 }
+
 
 
 

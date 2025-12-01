@@ -191,42 +191,93 @@
     </section>
 
     <!-- Форма помощи -->
-    <section id="help" class="help-form">
-        <div class="container">
-            <h2>ХОЧУ ПОМОЧЬ ПРОЕКТУ!</h2>
-            <p class="help-subtitle">Вы можете стать волонтером, партнером или просто задать вопрос. Свяжитесь с нами!</p>
+<section id="help" class="help-form">
+    <div class="container">
+        <h2>ХОЧУ ПОМОЧЬ ПРОЕКТУ!</h2>
+        <p class="help-subtitle">Вы можете стать волонтером, партнером или просто задать вопрос. Свяжитесь с нами!</p>
+        
+        <!-- Замените YOUR_FORM_ID на ID из вашей ссылки -->
+        <form class="contact-form" 
+              action="https://docs.google.com/forms/d/e/1FAIpQLSenNDdO6Wz7nQeX3UThpWPFN0ILswHbypJuEzmmIpje4TJlMg/formResponse" 
+              method="POST"
+              target="hidden_iframe"
+              onsubmit="return handleFormSubmit(this);">
             
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Ваш email" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="tel" id="phone" name="phone" placeholder="Ваш телефон">
-                </div>
-                
-                <div class="form-group">
-                    <select id="interest" name="interest" required>
-                        <option value="">Я хочу...</option>
-                        <option value="volunteer">Стать волонтером</option>
-                        <option value="partner">Стать партнером</option>
-                        <option value="question">Задать вопрос</option>
-                        <option value="support">Просто поддержать проект</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Ваше сообщение" rows="5"></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Отправить заявку</button>
-            </form>
-        </div>
-    </section>
+            <!-- Поле 1: Имя (entry.1962778822 предположительно) -->
+            <div class="form-group">
+                <input type="text" 
+                       name="entry.1962778822" 
+                       placeholder="Ваше имя" 
+                       required
+                       id="name"
+                       aria-label="Ваше имя">
+            </div>
+            
+            <!-- Поле 2: Email (entry.1490574533 предположительно) -->
+            <div class="form-group">
+                <input type="email" 
+                       name="entry.1490574533" 
+                       placeholder="Ваш email" 
+                       required
+                       id="email"
+                       aria-label="Ваш email">
+            </div>
+            
+            <!-- Поле 3: Телефон (entry.583000267 предположительно) -->
+            <div class="form-group">
+                <input type="tel" 
+                       name="entry.583000267" 
+                       placeholder="Ваш телефон"
+                       id="phone"
+                       aria-label="Ваш телефон">
+            </div>
+            
+            <!-- Поле 4: Я хочу... (entry.1690553573 предположительно) -->
+            <div class="form-group">
+                <select name="entry.1690553573" required id="interest" aria-label="Я хочу">
+                    <option value="">Я хочу...</option>
+                    <option value="Стать волонтером">Стать волонтером</option>
+                    <option value="Стать партнером">Стать партнером</option>
+                    <option value="Задать вопрос">Задать вопрос</option>
+                    <option value="Просто поддержать проект">Просто поддержать проект</option>
+                </select>
+            </div>
+            
+            <!-- Поле 5: Сообщение (entry.937931408 предположительно) -->
+            <div class="form-group">
+                <textarea name="entry.937931408" 
+                          placeholder="Ваше сообщение" 
+                          rows="5"
+                          id="message"
+                          aria-label="Ваше сообщение"></textarea>
+            </div>
+            
+            <!-- Скрытые поля для Google Forms -->
+            <input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="-1234567890123456789">
+            
+            <!-- Кнопка отправки -->
+            <button type="submit" class="btn btn-primary" id="submitBtn">Отправить заявку</button>
+            
+            <!-- Сообщение об успехе -->
+            <div id="success-message" style="display: none; margin-top: 20px; padding: 20px; background: #d4edda; color: #155724; border-radius: 8px; border-left: 4px solid #28a745;">
+                <h4 style="margin-top: 0; color: #155724;">✅ Спасибо за заявку!</h4>
+                <p style="margin-bottom: 5px;">Ваша заявка успешно отправлена.</p>
+                <p style="margin-bottom: 0; font-size: 0.9em; opacity: 0.8;">Мы свяжемся с вами в ближайшее время.</p>
+            </div>
+            
+            <!-- Индикатор загрузки -->
+            <div id="loading" style="display: none; margin-top: 20px; text-align: center;">
+                <div class="spinner" style="width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #2E8B57; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
+                <p style="margin-top: 10px; color: #666;">Отправка заявки...</p>
+            </div>
+        </form>
+        
+        <!-- Скрытый iframe для отправки формы -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    </div>
+</section>
 
     <!-- Контакты -->
     <section class="contacts">
@@ -272,4 +323,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 

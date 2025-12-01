@@ -1032,8 +1032,9 @@ section h2 {
     height: 120px;
     border-radius: 50%;
     margin: 0 auto;
-    background: #ddd;
+    object-fit: cover; /* Это важно для правильного отображения фото */
     border: 3px solid #2E8B57;
+    background: #ddd; /* Фон на случай, если фото не загрузится */
 }
 
 .member-badge {
@@ -2331,3 +2332,4 @@ section h2 {
         padding: 1rem;
     }
 }
+
